@@ -9,9 +9,7 @@
 .col {
   display: block;
   float: left;
-}
-.col:first-child {
-  margin-left: 0;
+  margin: 1% 0 1% 0%;
 }
 /*  GRID OF TWELVE  */
 .col_12 {
@@ -50,6 +48,11 @@
 .col_1 {
   width: 6.866%;
 }
+body {
+  background: #f0f0f0;
+  color: #5b5b5b;
+  font-family: "Helvetica", Arial, sans-serif;
+}
 ul {
   list-style: none;
 }
@@ -63,11 +66,21 @@ div {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: auto;
+}
+.new_price {
+  color: #ca0000;
+  font-weight: bold;
+  line-height: .5em;
+}
+.old_price {
+  text-decoration: line-through;
+  line-height: .1em;
 }
 header {
   width: 100%;
   margin: auto;
-  height: 130px;
+  height: 150px;
   background-color: #ffffff;
   border-bottom: 1px solid #dddddd;
 }
@@ -84,30 +97,34 @@ header .header-content nav ul li {
   display: inline-block;
   padding: 5% 10%;
   font-size: 24px;
-  font-family: "Helvetica";
   color: #7c878f;
   line-height: 3.708;
 }
-section {
-  background: #f0f0f0;
-}
-section .products {
-  padding: 3%;
-}
-section .products .prod-wrapper {
+section .prod-wrapper {
   background: #ffffff;
-  margin: 2% 2% 2% 3%;
+  margin: 2%;
   padding: 6%;
-  width: 33%;
 }
 footer {
   clear: both;
+  border-top: 1px solid #dddddd;
   padding: 3% 0;
   text-align: center;
   background: #ffffff;
 }
-footer .copyright {
-  padding-bottom: 1%;
+footer .copyright,
+footer .privacy {
+  font-size: 20px;
+  color: #666666;
+  line-height: 1.75;
+  text-align: center;
+  z-index: 41;
+}
+footer .privacy {
+  color: #f57b20;
+}
+footer .privacy span {
+  color: #b6b6b6;
 }
 .product_button {
   border: 1px solid #d55b00;
@@ -121,20 +138,96 @@ footer .copyright {
 }
 .view_more_button {
   border: 2px solid #4d575f;
-  border-width: 2px;
   border-radius: 5px;
   background-image: -moz-linear-gradient(90deg, #5f6c76 0%, #8293a1 100%);
   background-image: -webkit-linear-gradient(90deg, #5f6c76 0%, #8293a1 100%);
   background-image: -ms-linear-gradient(90deg, #5f6c76 0%, #8293a1 100%);
   box-shadow: 0px 2px 2px 0px rgba(2, 3, 3, 0.4);
   color: #fff;
-  font-size: 1.75em;
+  font-size: 1.5em;
   width: 50%;
   height: 72px;
   margin: 2% 25%;
 }
-@media (min-width: 641px) {
+@media (min-width: 736px) {
   body {
     background: red;
+  }
+  .col_md_12 {
+    width: 100%;
+  }
+  .col_md_11 {
+    width: 91.53%;
+  }
+  .col_md_10 {
+    width: 83.06%;
+  }
+  .col_md_9 {
+    width: 74.6%;
+  }
+  .col_md_8 {
+    width: 66.13%;
+  }
+  .col_md_7 {
+    width: 57.66%;
+  }
+  .col_md_6 {
+    width: 49.2%;
+  }
+  .col_md_5 {
+    width: 40.73%;
+  }
+  .col_md_4 {
+    width: 32.26%;
+  }
+  .col_md_3 {
+    width: 23.8%;
+  }
+  .col_md_2 {
+    width: 15.33%;
+  }
+  .col_md_1 {
+    width: 6.866%;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background: green;
+  }
+  .col_lg_12 {
+    width: 100%;
+  }
+  .col_lg_11 {
+    width: 91.53%;
+  }
+  .col_lg_10 {
+    width: 83.06%;
+  }
+  .col_lg_9 {
+    width: 74.6%;
+  }
+  .col_lg_8 {
+    width: 66.13%;
+  }
+  .col_lg_7 {
+    width: 57.66%;
+  }
+  .col_lg_6 {
+    width: 49.2%;
+  }
+  .col_lg_5 {
+    width: 40.73%;
+  }
+  .col_lg_4 {
+    width: 32.26%;
+  }
+  .col_lg_3 {
+    width: 23.8%;
+  }
+  .col_lg_2 {
+    width: 15.33%;
+  }
+  .col_lg_1 {
+    width: 6.866%;
   }
 }
