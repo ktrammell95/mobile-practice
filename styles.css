@@ -97,6 +97,7 @@ header .header-content nav .main-nav {
   float: right;
   border-radius: 4px;
   margin-top: 8px;
+  padding: 0;
 }
 header .header-content nav .main-nav li {
   float: left;
@@ -130,10 +131,19 @@ form {
 input {
   line-height: 2em;
 }
+.input {
+  float: left;
+  width: 70%;
+}
+.search-btn {
+  float: left;
+  width: 30%;
+}
 .search-field {
   font-family: "Helvetica";
   color: #ffffff;
   text-align: left;
+  width: 100%;
 }
 .search_button {
   border-style: solid;
@@ -232,7 +242,7 @@ footer .privacy span {
     width: 6.866%;
   }
   section .prod-wrapper {
-    margin: 30px;
+    margin: 15px;
     padding: 1%;
   }
 }
