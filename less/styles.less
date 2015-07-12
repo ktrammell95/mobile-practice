@@ -46,6 +46,8 @@ body{
 }
 ul{list-style: none;}
 div{display: block;}
+a{text-decoration: none;}
+
 .outer-container{margin: 0 5%;}
 .img-responsive{
 	display: block;
@@ -73,24 +75,44 @@ header {
 		border-bottom: @section-border;
 		nav {
 			img{margin: 5%;}
-			ul {
-				display: inline;
+			.main-nav {
+			  float: right;
+			  border-radius: 4px;
+			  margin-top: 8px;
 				li {
-					display: inline-block;
-					padding: 5% 10%;
-					font-size: 24px;
-					// font-family: "Helvetica";
-					color: rgb(124, 135, 143);
-					line-height: 3.708;
-				}
+			    float: left;
+			  }
+				a {
+			    color: #5b5b5b;
+			    display: block;
+			    padding: 10px 30px;
+			    text-decoration: none;
+			  }
 			}
 		}
 	}
+	.drop-nav {
+	  background: #2c3e50;
+	}
+	.dropdown{
+	  position: relative;
+			li {
+			  border-bottom: 1px solid rgba(255,255,255,.2);
+			}
+	}
+	.drop-nav{
+	  position: absolute;
+	  display: none;
+		width: 100%;
+	}
+	.dropdown:hover > .drop-nav{
+	  display: block;
+	}
+
 	// .search-field {
 	//   font-size: 24px;
 	//   font-family: "Helvetica";
 	//   color: rgb(255, 255, 255);
-	//   line-height: 3.708;
 	//   text-align: left;
 	// }
 	// .search_button {
@@ -98,15 +120,17 @@ header {
 	//   border-width: 1px;
 	//   border-color: rgb(204, 204, 204);
 	//   background-color: rgb(95, 108, 118);
-	//   width: 152px;
-	//   height: 62px;
+	//   width: 150px;
+	//   height: 40px;
+	// 	color: #fff;
+	// 	margin-left: -5px;
 	// }
 }//Header
 
 section{
 	.prod-wrapper{
 		background: @light-bkgrnd;
-		margin: 2%;
+		margin: 15px;
 		padding: 6%;
 	}
 }
@@ -156,7 +180,6 @@ footer{
 
 
 @media (min-width: 736px){
- body{background: red}
  .col_md_12{width: 100%;}
  .col_md_11{width: 91.53%;}
  .col_md_10{width: 83.06%;}
@@ -169,12 +192,13 @@ footer{
  .col_md_3{width: 23.8%;}
  .col_md_2{width: 15.33%;}
  .col_md_1{width: 6.866%;}
+
 }
 
 
 
+
 @media (min-width: 1024px){
-	body{background: green}
   .col_lg_12{width: 100%;}
   .col_lg_11{width: 91.53%;}
   .col_lg_10{width: 83.06%;}
@@ -187,4 +211,11 @@ footer{
   .col_lg_3{width: 23.8%;}
   .col_lg_2{width: 15.33%;}
   .col_lg_1{width: 6.866%;}
+
+	section{
+		.prod-wrapper{
+			margin: 30px;
+			padding: 5%;
+		}
+	}
  }
