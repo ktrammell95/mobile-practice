@@ -17,14 +17,8 @@
          </div>
          <nav class="col col_6">
            <ul class="main-nav">
-            <li class="dropdown">
+            <li onclick="showHide('menuItems')" class="dropdown">
               <a href="#">Menu</a>
-              <ul class="drop-nav">
-                <li><a href="#">Menu Item 1</a></li>
-                <li><a href="#">Menu Item 2</a></li>
-                <li><a href="#">Menu Item 3</a></li>
-                <li><a href="#">Menu Item 4</a></li>
-              </ul>
             </li>
             <li><a href="#">Cart</a></li>
            </ul>
@@ -42,6 +36,16 @@
         </div>
       </div>
      </header>
+     <div class="col_12 dropdown-nav">
+       <nav>
+         <ul id="menuItems" class="drop-nav">
+           <li><a href="#">Menu Item 1</a></li>
+           <li><a href="#">Menu Item 2</a></li>
+           <li><a href="#">Menu Item 3</a></li>
+           <li><a href="#">Menu Item 4</a></li>
+         </ul>
+       </nav>
+     </div>
      <div class="outer-container">
      <section class="container section">
        <!-- <div class="products"> -->
@@ -126,4 +130,14 @@
     </footer>
 
   </body>
+
+  <script>
+    function showHide(id) {
+        var el = document.getElementById(id);
+        if( el && el.style.display == 'none')
+            el.style.display = 'block';
+        else
+            el.style.display = 'none';
+    }
+  </script>
 </html>
