@@ -241,25 +241,6 @@ footer .privacy span {
   color: #b6b6b6;
 }
 /*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-  .col {
-    margin: 1% 0 1% 0%;
-  }
-  .col_1,
-  .col_2,
-  .col_3,
-  .col_4,
-  .col_5,
-  .col_6,
-  .col_7,
-  .col_8,
-  .col_9,
-  .col_10,
-  .col_11,
-  .col_12 {
-    width: 100%;
-  }
-}
 @media (min-width: 1024px) {
   .col_lg_12 {
     width: 100%;
