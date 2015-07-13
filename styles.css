@@ -69,6 +69,9 @@ a {
   padding-top: 150px;
 }
 .outer-container {
+  margin: auto;
+}
+.header-container {
   margin: 0 5%;
 }
 .top-btn {
@@ -193,6 +196,29 @@ section .prod-wrapper {
   margin: 15px;
   padding: 3%;
 }
+section .product_button {
+  border: 1px solid #d55b00;
+  border-radius: 5px;
+  background-image: -moz-linear-gradient(90deg, #f56900 0%, #ff8f3b 100%);
+  background-image: -webkit-linear-gradient(90deg, #f56900 0%, #ff8f3b 100%);
+  background-image: -ms-linear-gradient(90deg, #f56900 0%, #ff8f3b 100%);
+  color: #fff;
+  width: 100%;
+  height: 58px;
+}
+section .view_more_button {
+  border: 2px solid #4d575f;
+  border-radius: 5px;
+  background-image: -moz-linear-gradient(90deg, #5f6c76 0%, #8293a1 100%);
+  background-image: -webkit-linear-gradient(90deg, #5f6c76 0%, #8293a1 100%);
+  background-image: -ms-linear-gradient(90deg, #5f6c76 0%, #8293a1 100%);
+  box-shadow: 0px 2px 2px 0px rgba(2, 3, 3, 0.4);
+  color: #fff;
+  font-size: 1.5em;
+  width: 50%;
+  height: 72px;
+  margin: 2% 25%;
+}
 footer {
   clear: both;
   border-top: 1px solid #dddddd;
@@ -214,28 +240,25 @@ footer .privacy {
 footer .privacy span {
   color: #b6b6b6;
 }
-.product_button {
-  border: 1px solid #d55b00;
-  border-radius: 5px;
-  background-image: -moz-linear-gradient(90deg, #f56900 0%, #ff8f3b 100%);
-  background-image: -webkit-linear-gradient(90deg, #f56900 0%, #ff8f3b 100%);
-  background-image: -ms-linear-gradient(90deg, #f56900 0%, #ff8f3b 100%);
-  color: #fff;
-  width: 100%;
-  height: 58px;
-}
-.view_more_button {
-  border: 2px solid #4d575f;
-  border-radius: 5px;
-  background-image: -moz-linear-gradient(90deg, #5f6c76 0%, #8293a1 100%);
-  background-image: -webkit-linear-gradient(90deg, #5f6c76 0%, #8293a1 100%);
-  background-image: -ms-linear-gradient(90deg, #5f6c76 0%, #8293a1 100%);
-  box-shadow: 0px 2px 2px 0px rgba(2, 3, 3, 0.4);
-  color: #fff;
-  font-size: 1.5em;
-  width: 50%;
-  height: 72px;
-  margin: 2% 25%;
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+  .col_1,
+  .col_2,
+  .col_3,
+  .col_4,
+  .col_5,
+  .col_6,
+  .col_7,
+  .col_8,
+  .col_9,
+  .col_10,
+  .col_11,
+  .col_12 {
+    width: 100%;
+  }
 }
 @media (min-width: 1024px) {
   .col_lg_12 {
